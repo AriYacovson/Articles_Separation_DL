@@ -1,6 +1,7 @@
 import os
 from pdf2image import convert_from_path
 
+
 def directory_open_and_convert_pdf_to_png(input_directory_path, poppler_path,
                                           first_pages_directory_path, other_pages_directory_path):
     """
