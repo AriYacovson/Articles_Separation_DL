@@ -17,16 +17,13 @@ def directory_open_and_convert_pdf_to_png(input_directory_path, poppler_path,
     :return:
     """
 
-    # Directory containing the PDF files
-    pdf_directory = input_directory_path
-
     # Get a list of all PDF files in the directory
-    pdf_files = [file for file in os.listdir(pdf_directory) if file.endswith('.pdf')]
+    pdf_files = [file for file in os.listdir(input_directory_path) if file.endswith('.pdf')]
 
     # Loop through each PDF file
     for pdf_file in pdf_files:
         # Create the full path to the PDF file
-        pdf_path = os.path.join(pdf_directory, pdf_file)
+        pdf_path = os.path.join(input_directory_path, pdf_file)
 
         # Convert the PDF file to images
         images = convert_from_path(

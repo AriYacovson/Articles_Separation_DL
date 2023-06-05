@@ -1,3 +1,5 @@
+import PIL.ImageShow
+
 from pdf2img import *
 from preprocessing import *
 
@@ -22,6 +24,8 @@ def main():
     # # testing the function
     # print(X.shape)
     # print(y.shape)
+    # img = Image.fromarray(X[0]*255)
+    # img.show()
 
 
 

@@ -17,6 +17,7 @@ def open_resize_and_label_png_directory(input_directory_path, image_width, image
     :rtype images: list
     :rtype labels: list
     """
+
     # Initialize lists to store images and labels
     images = []
     labels = []
