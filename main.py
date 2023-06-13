@@ -58,7 +58,7 @@ def main():
     model = tf.keras.Sequential()
 
     # Add a convolutional layer with 32 filters, a 3x3 kernel, and 'relu' activation
-    model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(image_height, image_width, 1)))
+    model.add(layers.Conv2D(64, (3, 3), activation='relu', input_shape=(image_height, image_width, 1)))
 
     # Add a max pooling layer with 2x2 pool size
     model.add(layers.MaxPooling2D((2, 2)))
@@ -70,7 +70,7 @@ def main():
     model.add(layers.Flatten())
 
     # Add a dense (fully connected) layer with 64 units and 'relu' activation
-    model.add(layers.Dense(64, activation='relu'))
+    model.add(layers.Dense(32, activation='relu'))
 
     # Add an output layer with 1 unit and 'sigmoid' activation for binary classification
     model.add(layers.Dense(1, activation='sigmoid'))
@@ -103,7 +103,7 @@ def main():
     print(model.summary())
 
     # Save the model to h5 file
-    model.save('first_model.h5')
+    model.save('third_model.h5')
 
 
 if __name__ == '__main__':
