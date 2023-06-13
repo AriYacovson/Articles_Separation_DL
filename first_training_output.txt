@@ -1,0 +1,53 @@
+C:\Users\ariya\AppData\Local\Programs\Python\Python311\python.exe "C:/Program Files/JetBrains/PyCharm Community Edition 2023.1.2/plugins/python-ce/helpers/pydev/pydevd.py" --multiprocess --qt-support=auto --client 127.0.0.1 --port 49737 --file C:\Users\ariya\PycharmProjects\Articles_Separation_DL\main.py
+Connected to pydev debugger (build 231.9011.38)
+--- 84.36254572868347 seconds --- till open and preprocessed
+y_train:  int32 y_test:  int32
+X_train shape: (6102, 224, 224, 1) y_train shape: (6102,)
+--- 4.061967372894287 seconds --- till defining the model
+Epoch 1/10
+382/382 [==============================] - 148s 381ms/step - loss: 0.4517 - accuracy: 0.9451 - val_loss: 0.1265 - val_accuracy: 0.9561
+Epoch 2/10
+382/382 [==============================] - 147s 386ms/step - loss: 0.0936 - accuracy: 0.9743 - val_loss: 0.1971 - val_accuracy: 0.9528
+Epoch 3/10
+382/382 [==============================] - 147s 385ms/step - loss: 0.0729 - accuracy: 0.9800 - val_loss: 0.1008 - val_accuracy: 0.9718
+Epoch 4/10
+382/382 [==============================] - 148s 389ms/step - loss: 0.0524 - accuracy: 0.9841 - val_loss: 0.0958 - val_accuracy: 0.9738
+Epoch 5/10
+382/382 [==============================] - 149s 391ms/step - loss: 0.0434 - accuracy: 0.9861 - val_loss: 0.1623 - val_accuracy: 0.9685
+Epoch 6/10
+382/382 [==============================] - 154s 403ms/step - loss: 0.0243 - accuracy: 0.9921 - val_loss: 0.1660 - val_accuracy: 0.9672
+Epoch 7/10
+382/382 [==============================] - 156s 409ms/step - loss: 0.0360 - accuracy: 0.9900 - val_loss: 0.1097 - val_accuracy: 0.9699
+Epoch 8/10
+382/382 [==============================] - 159s 417ms/step - loss: 0.0231 - accuracy: 0.9933 - val_loss: 0.1643 - val_accuracy: 0.9613
+Epoch 9/10
+382/382 [==============================] - 162s 424ms/step - loss: 0.0151 - accuracy: 0.9964 - val_loss: 0.2356 - val_accuracy: 0.9653
+Epoch 10/10
+382/382 [==============================] - 165s 431ms/step - loss: 0.0110 - accuracy: 0.9989 - val_loss: 0.1694 - val_accuracy: 0.9699
+48/48 [==============================] - 5s 95ms/step - loss: 0.1694 - accuracy: 0.9699
+Test Loss: 0.16940875351428986
+Test Accuracy: 0.9698558449745178
+--- 1574.5724966526031 seconds --- till training the model
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ conv2d (Conv2D)             (None, 222, 222, 32)      320
+
+ max_pooling2d (MaxPooling2D  (None, 111, 111, 32)     0
+ )
+
+ conv2d_1 (Conv2D)           (None, 109, 109, 64)      18496
+
+ flatten (Flatten)           (None, 760384)            0
+
+ dense (Dense)               (None, 64)                48664640
+
+ dense_1 (Dense)             (None, 1)                 65
+
+=================================================================
+Total params: 48,683,521
+Trainable params: 48,683,521
+Non-trainable params: 0
+_________________________________________________________________
+None
