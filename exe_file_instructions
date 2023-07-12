@@ -1,0 +1,3 @@
+# to create an exe file, run the following command in your terminal (which should be located where split_book_to_article is):
+pyinstaller --onefile --add-data "first_model.h5;." split_book_to_article.py
+pyinstaller --onefile split_book_to_article.py
