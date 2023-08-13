@@ -12,7 +12,7 @@ To achieve this, we trained a CNN (Convolutional Neural Network) model. We gathe
 ### Data Collection
 We utilized web scraping tools to extract articles from the Asif Library website. This ensured that our model was trained on genuine and relevant data, matching the actual use-case.
 
-## Data Preprocessing
+### Data Preprocessing
 After obtaining the raw data, it underwent preprocessing. This included tasks like:
 
 Converting images within the PDFs to a standard format and resolution suitable for the CNN model.
