@@ -1,0 +1,62 @@
+C:\Users\ariya\AppData\Local\Programs\Python\Python311\python.exe C:\Users\ariya\PycharmProjects\Articles_Separation_DL\main.py
+--- 126.06984448432922 seconds --- till open and preprocessed
+X_train shape: (6102, 224, 224, 1) y_train shape: (6102,)
+X_test shape: (1526, 224, 224, 1) y_test shape: (1526,)
+2023-06-13 12:01:06.502457: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 194658304 exceeds 10% of free system memory.
+2023-06-13 12:01:06.757857: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 194658304 exceeds 10% of free system memory.
+2023-06-13 12:01:06.799240: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 194658304 exceeds 10% of free system memory.
+--- 1.4114470481872559 seconds --- till defining the model
+Epoch 1/10
+2023-06-13 12:01:14.740977: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 194658304 exceeds 10% of free system memory.
+2023-06-13 12:01:14.792080: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 194658304 exceeds 10% of free system memory.
+382/382 [==============================] - 237s 617ms/step - loss: 0.6596 - accuracy: 0.9308 - val_loss: 0.5509 - val_accuracy: 0.9450
+Epoch 2/10
+382/382 [==============================] - 177s 464ms/step - loss: 0.5041 - accuracy: 0.9312 - val_loss: 0.4485 - val_accuracy: 0.9450
+Epoch 3/10
+382/382 [==============================] - 177s 465ms/step - loss: 0.4224 - accuracy: 0.9312 - val_loss: 0.3776 - val_accuracy: 0.9450
+Epoch 4/10
+382/382 [==============================] - 179s 468ms/step - loss: 0.3663 - accuracy: 0.9312 - val_loss: 0.3280 - val_accuracy: 0.9450
+Epoch 5/10
+382/382 [==============================] - 214s 561ms/step - loss: 0.3279 - accuracy: 0.9312 - val_loss: 0.2933 - val_accuracy: 0.9450
+Epoch 6/10
+382/382 [==============================] - 451s 1s/step - loss: 0.3016 - accuracy: 0.9312 - val_loss: 0.2691 - val_accuracy: 0.9450
+Epoch 7/10
+382/382 [==============================] - 170s 445ms/step - loss: 0.2839 - accuracy: 0.9312 - val_loss: 0.2522 - val_accuracy: 0.9450
+Epoch 8/10
+382/382 [==============================] - 258s 675ms/step - loss: 0.2718 - accuracy: 0.9312 - val_loss: 0.2403 - val_accuracy: 0.9450
+Epoch 9/10
+382/382 [==============================] - 293s 768ms/step - loss: 0.2638 - accuracy: 0.9312 - val_loss: 0.2321 - val_accuracy: 0.9450
+Epoch 10/10
+382/382 [==============================] - 203s 532ms/step - loss: 0.2586 - accuracy: 0.9312 - val_loss: 0.2265 - val_accuracy: 0.9450
+48/48 [==============================] - 7s 149ms/step - loss: 0.2265 - accuracy: 0.9450
+
+Test loss: 0.22645433247089386
+Test accuracy: 0.9449541568756104
+--- 2374.015905857086 seconds --- till training the model
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ conv2d (Conv2D)             (None, 222, 222, 32)      320
+
+ max_pooling2d (MaxPooling2D  (None, 111, 111, 32)     0
+ )
+
+ conv2d_1 (Conv2D)           (None, 109, 109, 64)      18496
+
+ dropout (Dropout)           (None, 109, 109, 64)      0
+
+ flatten (Flatten)           (None, 760384)            0
+
+ dense (Dense)               (None, 64)                48664640
+
+ dense_1 (Dense)             (None, 1)                 65
+
+=================================================================
+Total params: 48,683,521
+Trainable params: 48,683,521
+Non-trainable params: 0
+_________________________________________________________________
+None
+
+Process finished with exit code 0
