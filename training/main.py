@@ -1,7 +1,5 @@
-import PIL.ImageShow
-
-from pdf2img import *
-from preprocessing import *
+from training.pdf2img import *
+from training.preprocessing import *
 
 
 def main():
